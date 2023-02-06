@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body style="background-color:#faafba">
+    <div align="center">
+        <div><h1>LOGIN PAGE</h1></div>
+        <div>
+            <form action="{{url_for('login')}}" method="POST">
+                <div>{{ message }}</div> <br><br>
+                <label><b>USERNAME		</b> </label><input id="username" name="username" type="text" placeholder="User Name" autocomplete="off"/> <br><br>
+                <label><b>PASSWORD		 </b></label><input id="password" name="password" type="password" placeholder="Password" autocomplete="off"/> <br><br>
+                <button id="submit" name="submit"><b>LOGIN</b></button>
+            </form>
+        </div>
+        <p><b>Haven't registered yet? Follow the  <a href="{{url_for('registration')}}">link</a> please!</b></p>
+    </div>
+</body>
+</html>
